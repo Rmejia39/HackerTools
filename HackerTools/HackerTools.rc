@@ -1,0 +1,667 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#include ""res\\HackerTools.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.CHS\\afxribbon.rc""   // MFC 功能区和控制条资源\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\HackerTools.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 HackerTools"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "HackerTools，版本 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2018",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_HACKERTOOLS_DIALOG DIALOGEX 0, 0, 283, 197
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "HackerTools"
+MENU IDR_MENU1
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,0,0,283,197
+END
+
+IDD_USER DIALOGEX 0, 0, 335, 206
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "注入技术",IDC_Inject,131,31,73,32
+    PUSHBUTTON      "启动技术",IDC_Start,227,31,73,32
+    PUSHBUTTON      "基础技术",IDC_Base,33,31,73,32
+    PUSHBUTTON      "提权技术",IDC_Privilege,131,78,73,32
+    PUSHBUTTON      "隐藏技术",IDC_Hide,227,78,73,32
+    PUSHBUTTON      "自启动技术",IDC_SelfStart,33,78,73,32
+    PUSHBUTTON      "加密技术",IDC_Encrypt,131,126,73,32
+    PUSHBUTTON      "压缩技术",IDC_Compress,33,126,73,32
+    PUSHBUTTON      "功能技术",IDC_Other,227,126,73,32
+END
+
+IDD_CORE DIALOGEX 0, 0, 342, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_Base DIALOGEX 0, 0, 245, 163
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "基础技术"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "防双开",IDC_RunSingle,21,110,63,39
+    PUSHBUTTON      "释放资源",IDC_ReleaseRes,161,110,63,39
+    EDITTEXT        IDC_EDIT1,26,17,196,85,ES_MULTILINE | ES_AUTOHSCROLL
+    LTEXT           "提示信息：",IDC_STATIC,27,5,41,8
+END
+
+IDD_Inject DIALOGEX 0, 0, 263, 228
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+CAPTION "注入技术"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "全局钩子注入",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,20,23,64,10
+    CONTROL         "远程线程注入",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,106,23,64,10
+    CONTROL         "APC注入",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,202,23,45,10
+    EDITTEXT        IDC_EDIT1,71,45,164,18,ES_AUTOHSCROLL
+    LTEXT           "拖拽dll到此处",IDC_STATIC,12,49,48,8
+    PUSHBUTTON      "开始注入",IDC_Inject,84,188,67,34
+    EDITTEXT        IDC_EDIT3,17,105,219,82,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    LTEXT           "提示信息：",IDC_STATIC,18,92,41,8
+    EDITTEXT        IDC_EDIT2,72,68,164,18,ES_AUTOHSCROLL
+    LTEXT           "啦啦啦啦啦啦拉",IDC_STATIC1,12,72,57,8
+END
+
+IDD_Start DIALOGEX 0, 0, 261, 244
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+CAPTION "启动技术"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,79,11,128,14,ES_AUTOHSCROLL
+    LTEXT           "拖拽文件：",IDC_STATIC,27,14,41,8
+    PUSHBUTTON      "三种方式创建进程",IDC_CreateProcess,54,40,120,23
+    PUSHBUTTON      "内存加载运行DLL",IDC_MemLoadDll,54,78,120,23
+    EDITTEXT        IDC_EDIT3,28,122,180,97,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    LTEXT           "提示：",IDC_STATIC,28,110,25,8
+END
+
+IDD_SelfStart DIALOGEX 0, 0, 251, 262
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+CAPTION "自启动技术"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,67,10,157,14,ES_AUTOHSCROLL
+    LTEXT           "拖拽文件：",IDC_STATIC,18,12,41,8
+    PUSHBUTTON      "计划任务",IDC_Task,11,81,108,28
+    PUSHBUTTON      "注册表",IDC_Regedit,11,41,108,28
+    PUSHBUTTON      "系统服务",IDC_Service,131,81,108,28
+    PUSHBUTTON      "快速启动目录",IDC_StartDir,129,40,108,28
+    EDITTEXT        IDC_EDIT2,16,143,214,91,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "提示：",IDC_STATIC,18,127,25,8
+END
+
+IDD_Privilege DIALOGEX 0, 0, 421, 340
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+CAPTION "提权技术"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "提升为Debug权限",IDC_Debug,24,12,74,37
+    PUSHBUTTON      "BypassUAC",IDC_PassUAC,161,12,74,37
+    LTEXT           "拖拽文件到此：",IDC_STATIC,72,58,57,8
+    CONTROL         "",IDC_AllPrivilege,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,71,114,256,216
+    PUSHBUTTON      "查看当前进程权限",IDC_CheckPrivilege,286,10,74,37
+    LTEXT           "权限：",IDC_STATIC,73,102,25,8
+    EDITTEXT        IDC_EDIT1,71,73,252,14,ES_AUTOHSCROLL
+END
+
+IDD_Hide DIALOGEX 0, 0, 365, 194
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+CAPTION "隐藏技术"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "进程伪装",IDC_Pretend,40,12,61,38
+    PUSHBUTTON      "傀儡进程",IDC_Puppet,137,12,61,38
+    PUSHBUTTON      "DLL劫持",IDC_Hijack,241,12,61,38
+    EDITTEXT        IDC_EDIT1,107,70,193,14,ES_AUTOHSCROLL
+    LTEXT           "拖拽文件到此：",IDC_STATIC,40,72,57,8
+    EDITTEXT        IDC_EDIT2,38,106,264,71,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    LTEXT           "提示：",IDC_STATIC,42,93,25,8
+END
+
+IDD_Compress DIALOGEX 0, 0, 283, 244
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+CAPTION "压缩技术"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,67,10,168,14,ES_AUTOHSCROLL
+    LTEXT           "文件压缩：",IDC_STATIC,24,13,41,8
+    PUSHBUTTON      "数据解压缩",IDC_DataCompress,25,198,64,29
+    PUSHBUTTON      "文件解压缩",IDC_FileCompress,186,198,64,29
+    EDITTEXT        IDC_EDIT2,25,54,211,66,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    LTEXT           "数据压缩：",IDC_STATIC,26,39,41,8
+    EDITTEXT        IDC_EDIT3,25,146,212,39,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    LTEXT           "提示：",IDC_STATIC,25,130,25,8
+END
+
+IDD_Encrypt DIALOGEX 0, 0, 309, 296
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+CAPTION "加密技术"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,75,12,219,14,ES_AUTOHSCROLL
+    LTEXT           "拖拽文件到此处：",IDC_STATIC,10,14,65,8
+    EDITTEXT        IDC_EDIT2,6,110,289,118,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    EDITTEXT        IDC_EDIT3,8,49,284,30,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    LTEXT           "提示：",IDC_STATIC,9,38,25,8
+    LTEXT           "数据加密：",IDC_STATIC,7,99,41,8
+    PUSHBUTTON      "RSA加/解密",IDC_RSA,227,245,60,35
+    PUSHBUTTON      "HASH",IDC_HASH,13,243,60,35
+    PUSHBUTTON      "AES加/解密",IDC_AES,117,245,60,35
+END
+
+IDD_Help DIALOGEX 0, 0, 323, 208
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "帮助"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_HSCROLL | WS_TABSTOP,0,0,323,207,WS_EX_LEFTSCROLLBAR
+END
+
+IDD_Function DIALOGEX 0, 0, 321, 265
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "功能技术"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "桌面截屏",IDC_ScreenShot,30,71,86,36
+    PUSHBUTTON      "进程遍历",IDC_EnumProcess,30,11,86,36
+    PUSHBUTTON      "文件监控",IDC_FileMonit,30,209,86,36
+    PUSHBUTTON      "文件遍历",IDC_EnumFiles,182,11,86,36
+    PUSHBUTTON      "按键记录",IDC_KeyRecord,182,71,86,36
+    PUSHBUTTON      "显示CMD结果",IDC_ShowCmd,30,136,86,36
+    PUSHBUTTON      "U盘小偷",IDC_DeviceMonit,182,136,86,36
+    PUSHBUTTON      "自删除",IDC_SelfDelete,182,209,86,36
+END
+
+IDD_EnumProcess DIALOGEX 0, 0, 419, 280
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "进程遍历"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,0,412,279
+END
+
+IDD_EnumFiles DIALOGEX 0, 0, 367, 264
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "文件遍历"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO1,107,11,59,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查看",IDC_CheckDisk,191,9,50,14
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,8,39,347,217
+END
+
+IDD_Disk DIALOGEX 0, 0, 249, 184
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "磁盘"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,81,16,100,14,ES_AUTOHSCROLL
+    LTEXT           "盘符:",IDC_STATIC,52,18,20,8
+    EDITTEXT        IDC_EDIT4,81,40,100,14,ES_AUTOHSCROLL
+    LTEXT           "名称:",IDC_STATIC,52,42,20,8
+    EDITTEXT        IDC_EDIT5,81,64,100,14,ES_AUTOHSCROLL
+    LTEXT           "磁盘系统:",IDC_STATIC,44,66,36,8
+    EDITTEXT        IDC_EDIT6,81,88,100,14,ES_AUTOHSCROLL
+    LTEXT           "可用空间:",IDC_STATIC,43,90,36,8
+    EDITTEXT        IDC_EDIT7,81,113,100,14,ES_AUTOHSCROLL
+    LTEXT           "总空间:",IDC_STATIC,51,115,28,8
+    EDITTEXT        IDC_EDIT8,81,139,100,14,ES_AUTOHSCROLL
+    LTEXT           "描述信息:",IDC_STATIC,43,141,36,8
+END
+
+IDD_FileAttr DIALOGEX 0, 0, 221, 245
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "名称:",IDC_STATIC,21,16,20,8
+    EDITTEXT        IDC_EDIT1,68,12,101,14,ES_AUTOHSCROLL
+    LTEXT           "类型:",IDC_STATIC,22,44,20,8
+    EDITTEXT        IDC_EDIT4,68,40,101,14,ES_AUTOHSCROLL
+    LTEXT           "位置:",IDC_STATIC,21,73,20,8
+    EDITTEXT        IDC_EDIT5,68,70,101,14,ES_AUTOHSCROLL
+    LTEXT           "创建时间:",IDC_STATIC,22,107,36,8
+    EDITTEXT        IDC_EDIT6,68,103,101,14,ES_AUTOHSCROLL
+    LTEXT           "最后访问:",IDC_STATIC,22,139,36,8
+    EDITTEXT        IDC_EDIT2,68,136,101,14,ES_AUTOHSCROLL
+    LTEXT           "最后修改:",IDC_STATIC,23,173,36,8
+    EDITTEXT        IDC_EDIT8,68,170,101,14,ES_AUTOHSCROLL
+    CONTROL         "只读",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,40,209,32,10
+    CONTROL         "隐藏",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,112,209,32,10
+END
+
+IDD_CmdResult DIALOGEX 0, 0, 311, 243
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CMD执行结果"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "执行CMD并显示结果",IDC_ShowCmd,85,197,105,38
+    LTEXT           "cmd命令：",IDC_STATIC,47,20,38,8
+    EDITTEXT        IDC_EDIT1,96,18,156,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,19,49,269,137,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    LTEXT           "执行结果：",IDC_STATIC,19,39,41,8
+END
+
+IDD_FileMonit DIALOGEX 0, 0, 297, 249
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "文件监控"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "提示：",IDC_STATIC,13,9,25,8
+    EDITTEXT        IDC_EDIT1,12,22,272,40,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    LTEXT           "文件监控",IDC_STATIC,14,71,33,8
+    EDITTEXT        IDC_EDIT4,12,85,274,158,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "HackerTools"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "HackerTools.exe"
+            VALUE "LegalCopyright", "TODO:  (C) <公司名>。  保留所有权利。"
+            VALUE "OriginalFilename", "HackerTools.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_HACKERTOOLS_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 188
+    END
+
+    IDD_USER, DIALOG
+    BEGIN
+    END
+
+    IDD_CORE, DIALOG
+    BEGIN
+    END
+
+    IDD_Base, DIALOG
+    BEGIN
+    END
+
+    IDD_Inject, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_Start, DIALOG
+    BEGIN
+    END
+
+    IDD_SelfStart, DIALOG
+    BEGIN
+    END
+
+    IDD_Privilege, DIALOG
+    BEGIN
+    END
+
+    IDD_Hide, DIALOG
+    BEGIN
+    END
+
+    IDD_Compress, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_Encrypt, DIALOG
+    BEGIN
+    END
+
+    IDD_Help, DIALOG
+    BEGIN
+        RIGHTMARGIN, 309
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_Function, DIALOG
+    BEGIN
+    END
+
+    IDD_EnumProcess, DIALOG
+    BEGIN
+        RIGHTMARGIN, 412
+    END
+
+    IDD_EnumFiles, DIALOG
+    BEGIN
+    END
+
+    IDD_Disk, DIALOG
+    BEGIN
+    END
+
+    IDD_FileAttr, DIALOG
+    BEGIN
+    END
+
+    IDD_CmdResult, DIALOG
+    BEGIN
+        RIGHTMARGIN, 309
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_FileMonit, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "帮助(help)",                    ID_32771
+    END
+    POPUP "说明"
+    BEGIN
+        MENUITEM "说明(introductions)",           ID_32772
+    END
+END
+
+IDR_MENU2 MENU
+BEGIN
+    POPUP "文件菜单"
+    BEGIN
+        MENUITEM "属性",                          ID_32773
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_HACKERTOOLS_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_USER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CORE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Base AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Inject AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Start AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SelfStart AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Privilege AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Hide AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Compress AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Encrypt AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Help AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Function AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EnumProcess AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EnumFiles AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Disk AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_FileAttr AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CmdResult AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_FileMonit AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// GUISHOU
+//
+
+IDR_GUISHOU2            GUISHOU                 "D:\\Projects\\HackerTools\\Debug\\MyHookDll.dll"
+
+IDR_GUISHOU1            GUISHOU                 "D:\\Projects\\HackerTools\\Debug\\TestDll.dll"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 HackerTools(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#include "res\HackerTools.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#if !defined(_AFXDLL)
+#include "l.CHS\afxribbon.rc"   // MFC 功能区和控制条资源
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
